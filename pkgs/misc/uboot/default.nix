@@ -395,6 +395,13 @@ in {
     filesToInstall = ["u-boot-sunxi-with-spl.bin"];
   };
 
+  ubootOrangePiR1PlusLts = buildUBoot {
+    defconfig = "orangepi-r1-plus-lts-rk3328_defconfig";
+    extraMeta.platforms = ["aarch64-linux"];
+    BL31 = "${armTrustedFirmwareRK3328}/bl31.elf";
+    filesToInstall = [ "u-boot-rockchip.bin" ];
+  };
+
   ubootOrangePiZeroPlus2H5 = buildUBoot {
     defconfig = "orangepi_zero_plus2_defconfig";
     extraMeta.platforms = ["aarch64-linux"];

@@ -28011,6 +28011,7 @@ with pkgs;
     ubootOrangePi3
     ubootOrangePi5
     ubootOrangePiPc
+    ubootOrangePiR1PlusLts
     ubootOrangePiZeroPlus2H5
     ubootOrangePiZero
     ubootOrangePiZero2
